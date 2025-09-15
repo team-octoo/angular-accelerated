@@ -1,0 +1,12 @@
+@let _task = task();
+
+@if (_task) {
+    <p>
+        <strong>{{ _task.taskName }}</strong>
+        <span>{{ _task.taskDescription }}</span>
+        <span>Duration: {{ _task.taskDuration }} mins</span>
+    </p>
+
+} @else {
+    <p>No task data available.</p>
+}

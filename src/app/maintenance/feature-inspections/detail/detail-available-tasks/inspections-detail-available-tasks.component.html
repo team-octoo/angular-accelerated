@@ -1,0 +1,5 @@
+<ul class="available-tasks-list">
+    <li *ngFor="let taskName of inspection.availableTaskNames; let index = index" class="available-tasks-list__item">
+        {{ index + 1 }}. {{ taskName }}
+    </li>
+</ul>

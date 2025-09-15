@@ -1,0 +1,25 @@
+<nav role="navigation" class="app-application-navigation">
+    <h4>Maintenance</h4>
+    <a class="app-application-navigation__item" [routerLink]="['/maintenance/inspections']"
+        [routerLinkActive]="'-active'">
+        Inspections
+    </a>
+    <a class="app-application-navigation__item" [routerLink]="['/maintenance/repairs']" [routerLinkActive]="'-active'">
+        Repairs
+    </a>
+
+    <h4>Planning</h4>
+    <a class="app-application-navigation__item" [routerLink]="['/planning/dashboard']" [routerLinkActive]="'-active'">
+        Dashboard
+    </a>
+    <a class="app-application-navigation__item" [routerLink]="['/planning/scheduling']" [routerLinkActive]="'-active'">
+        Scheduling
+    </a>
+
+
+    <div class="app-application-navigation__sub-navigation">
+        <a class="app-application-navigation__item" [routerLink]="['/about']" [routerLinkActive]="'-active'">
+            About
+        </a>
+    </div>
+</nav>

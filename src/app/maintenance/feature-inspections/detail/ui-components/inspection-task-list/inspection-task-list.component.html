@@ -1,0 +1,6 @@
+<input type="text" placeholder="Add tasks" [(ngModel)]="newTaskName" (keydown)="submitNewTaskOnEnter($event)"/>
+<ul>
+    <li *ngFor="let task of tasks">
+        {{ task.taskName }} - {{ task.taskDescription }} (Duration: {{ calculateTaskDuraction(task) }})
+    </li>
+</ul>

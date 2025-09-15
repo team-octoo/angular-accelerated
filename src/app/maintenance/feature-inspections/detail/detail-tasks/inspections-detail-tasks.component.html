@@ -1,0 +1,18 @@
+<app-inspection-graph [inspection]="inspection"></app-inspection-graph>
+
+<div class="task-lists">        
+    <section>
+        <h4>Planned ({{ calculateTotalCompletedTasks(inspection.plannedTasks) }} / {{ inspection.plannedTasks.length }})</h4>
+        <app-inspection-task-list [tasks]="inspection.plannedTasks" (add)="addNewTaskToList(inspection.plannedTasks, $event)"></app-inspection-task-list>
+        @if (showDebugInfo) {
+            <pre>{{ inspection.plannedTasks | json }}</pre>
+        }
+    </section>
+    <section>
+        <h4>Executed ({{ calculateTotalCompletedTasks(inspection.executedTasks) }} / {{ inspection.executedTasks.length }})</h4>
+        <app-inspection-task-list [tasks]="inspection.executedTasks" (add)="addNewTaskToList(inspection.executedTasks, $event)"></app-inspection-task-list>
+        @if (showDebugInfo) {
+            <pre>{{ inspection.executedTasks | json }}</pre>
+        }
+    </section>
+</div>

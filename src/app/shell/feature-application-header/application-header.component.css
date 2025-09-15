@@ -1,0 +1,22 @@
+.app-application-header {
+    display: flex;
+    height: var(--app-application-header-height);
+    padding: 0 var(--app-spacing-2);
+    justify-content: end;
+    align-items: center;
+
+    background-color: var(--app-color-dark);
+    color: var(--app-color-white);
+}
+
+.app-application-header__home-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-self: start;
+    margin: 0;
+    margin-inline-end: auto;
+
+    color: var(--app-color-white);
+    text-decoration: none;
+}

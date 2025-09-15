@@ -1,0 +1,24 @@
+<article class="inspection-detail">
+    <header class="inspection-detail__header">
+        <dl>
+            <dt>Inspection:</dt>
+            <dd>{{ inspection.name }}</dd>
+            <dt>Score:</dt>
+            <dd>{{ calculatePercentage(inspectionOverallScore ?? 0) }}</dd>
+            <dt>Status:</dt>
+            <dd>{{ inspection.status }}</dd>
+            <dt>Toggle debug info:</dt>
+            <dd><app-action-item (click)="toggleDebugInfo()">{{ showDebugInfo() ? 'Hide' : 'Show' }}</app-action-item></dd>
+        </dl>
+        
+        <app-action-item (click)="navigateToNextInspection()" class="inspection-detail__next">Next</app-action-item>
+    </header>
+
+    <nav class="inspection-detail__tabs">
+         <a routerLink="tasks" routerLinkActive="-active" class="inspection-detail__tabs__link">Tasks</a>
+         <a routerLink="info" routerLinkActive="-active" class="inspection-detail__tabs__link">Info</a>
+         <a routerLink="available-tasks" routerLinkActive="-active" class="inspection-detail__tabs__link">Available Tasks</a>
+    </nav>
+
+    <router-outlet></router-outlet>
+</article>

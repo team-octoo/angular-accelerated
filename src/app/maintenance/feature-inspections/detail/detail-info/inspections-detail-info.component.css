@@ -1,0 +1,19 @@
+dl {
+    margin: 1em 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+dt {
+    font-weight: bold;
+    background: #f7f7f7;
+    padding: 0.5em;
+    border-bottom: 1px solid #eee;
+}
+
+dd {
+    margin: 0;
+    padding: 0.5em;
+    border-bottom: 1px solid #eee;
+}

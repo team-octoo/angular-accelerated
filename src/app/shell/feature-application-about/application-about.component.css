@@ -1,0 +1,4 @@
+.app-application-about__visual {
+    margin-block-start: var(--app-spacing-5);
+    width: clamp(30rem, 80%, 100rem);
+}

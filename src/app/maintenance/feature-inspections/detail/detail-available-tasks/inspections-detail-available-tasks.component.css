@@ -1,0 +1,14 @@
+.available-tasks-list {
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow-y: auto;
+
+    border: 1px solid #ccc;
+    list-style: none;
+}
+
+.available-tasks-list__item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}

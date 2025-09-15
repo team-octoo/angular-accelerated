@@ -1,0 +1,24 @@
+
+<dl>
+    <dt>Inspection id</dt>
+    <dd>{{ inspection.id }}</dd>
+    <dt>Inspection name</dt>
+    <dd>{{ inspection.name }}</dd>
+    <dt>Description</dt>
+    <dd>{{ inspection.description }}</dd>
+    <dt>Date</dt>
+    <dd>{{ inspection.date }}</dd>
+    <dt>Location</dt>
+    <dd>{{ inspection.location }}</dd>
+    <dt>Assigned To</dt>
+    <dd>{{ inspection.assignedTo }}</dd>
+    <dt>Status</dt>
+    <dd>{{ inspection.status }}</dd>
+    <dt>Notes</dt>
+    <dd>{{ inspection.notes }}</dd>
+</dl>
+
+@if (showDebugInfo) {
+    <h3>Debug Info</h3>
+    <pre>{{ inspection | json }}</pre>
+}

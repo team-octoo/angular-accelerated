@@ -1,0 +1,11 @@
+.app-application-footer {
+    display: flex;
+    width: 100%;
+    height: var(--app-application-footer-height);
+    padding: var(--app-spacing-2) var(--app-spacing-2);
+    align-items: center;
+
+    font-size: 0.6rem;
+    background-color: var(--app-color-dark);
+    color: var(--app-color-white);
+}

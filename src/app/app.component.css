@@ -1,0 +1,21 @@
+.app-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--app-application-header-height) 1fr var(
+            --app-application-footer-height
+        );
+}
+
+.app-container__content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: var(--app-spacing-1) var(--app-spacing-2);
+    height: 100%;
+    overflow: hidden;
+}
+
+.app-container__content__outlet {
+    max-height: 100%;
+    overflow: auto;
+}

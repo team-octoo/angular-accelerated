@@ -1,0 +1,4 @@
+<header class="app-application-header">
+    <a [routerLink]="['/']" class="app-application-header__home-link">{{ currentFactorySignal() }}</a>
+    <app-action-item type="button" (onClick)="toggleLocation()">&#x267B; Toggle location</app-action-item>
+</header>

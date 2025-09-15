@@ -1,0 +1,31 @@
+.app-application-navigation {
+    display: flex;
+    width: var(--app-application-navigation-width);
+    height: 100%;
+    flex-direction: column;
+    gap: var(--app-spacing-2);
+    padding: var(--app-spacing-1) var(--app-spacing-2);
+}
+
+.app-application-navigation__item {
+    color: var(--app-color-secondary);
+    text-decoration: none;
+
+    transition: color var(--app-transition-default-duration)
+        var(--app-transition-default-ease);
+}
+
+.app-application-navigation__item:hover,
+.app-application-navigation__item:focus-visible {
+    color: var(--app-color-black);
+}
+
+.app-application-navigation__item.-active {
+    color: var(--app-color-primary);
+}
+
+.app-application-navigation__sub-navigation {
+    justify-self: end;
+    margin-block-start: auto;
+    margin-block-end: var(--app-spacing-2);
+}
