@@ -1,8 +1,4 @@
-# ModernAngularArchitecture
-
-## Architecture
-
-Read [Strategic Design](./explainer/strategic-design.md)
+# Angular Accelerated
 
 ## Development server
 
