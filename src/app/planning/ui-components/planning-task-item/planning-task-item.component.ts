@@ -16,6 +16,6 @@ export class PlanningTaskItemComponent {
         // Simulate a task reload after 5 seconds
         setTimeout(() => {
             this.reloadTask$.next();
-        }, 5000);
+        }, 100);
     }
 }
